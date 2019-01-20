@@ -1,0 +1,12 @@
+# You can provide your Curseforge BukkitDev API key from https://dev.bukkit.org/account/api-tokens to avoid 403 errors when downloading plugins from bukkit dev.
+#curseApikey: <your-api-key>
+plugins:
+  worldedit:
+    file: WorldEdit.jar
+    url: https://dev.bukkit.org/projects/worldedit/files/latest
+    # to avoid passing sensitive tokens to random sites you need to set the
+    # useToken to true when downloading from bukkit dev
+    useToken: true
+  worldedit:
+     file: WorldEdit.jar
+     bukkitId: 31043

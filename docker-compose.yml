@@ -1,0 +1,25 @@
+minecraft-server:
+  ports:
+    - "25565:25565"
+
+  environment:
+    EULA: "TRUE"
+    TYPE: "SPIGOT"
+    VERSION: "1.13.2"
+    SERVER_NAME: "MC Minecraft"
+    DIFFICULTY: "easy"
+    WHITELIST: "jonas"
+    OPS: "jonas"
+    ENABLE_RCON: "TRUE"
+    RCON_PASSWORD: "ForTheWatch"
+    MAX_PLAYERS: 20
+    MODE: "survival"
+    MOTD: "Welcome to MC Minecraft Server. Enjoy your stay"
+    LEVEL: "test"
+
+  image: mc_minecraft
+  container_name: minecraft_server
+
+  tty: true
+  stdin_open: true
+  restart: always
